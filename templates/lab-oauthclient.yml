@@ -45,7 +45,7 @@ objects:
       app: "sso"
   secret: ${OPENSHIFT_OAUTH_CLIENT_SECRET}
   redirectURIs:
-  - http://${KEYCLOAK_ROUTE_HOSTNAME}/
+  - ${KEYCLOAK_ROUTE_HOSTNAME}/
   grantMethod: prompt
 - kind: ConfigMap
   apiVersion: v1
